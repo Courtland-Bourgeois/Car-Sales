@@ -7,17 +7,16 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
-// import { statements } from '@babel/template';
 
 const App = (props) => {
-  console.log(props)
+  // console.log(props)
+
+  // const addFeature = item => {
+  //   // dipsatch an action here to add an item
+  // };
 
   // const removeFeature = item => {
   //   // dispatch an action here to remove an item
-  // };
-
-  // const buyItem = item => {
-  //   // dipsatch an action here to add an item
   // };
 
   return (
@@ -27,7 +26,7 @@ const App = (props) => {
         <AddedFeatures car={props.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={props.additionalFeatures} />
+        <AdditionalFeatures additionalFeatures={props.additionalFeatures} addFeature={props.addFeature} />
         <Total car={props.car} additionalPrice={props.additionalPrice} />
       </div>
     </div>
@@ -36,7 +35,7 @@ const App = (props) => {
 
 // redux stuff
 const mapStateToProps = state => {
-  console.log(state)
+  // console.log(state)
   return {
     car: state.car,
     additionalFeatures: state.additionalFeatures,
