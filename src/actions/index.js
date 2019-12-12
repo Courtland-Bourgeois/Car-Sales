@@ -1,4 +1,3 @@
-// 
 export const ADD_FEATURE = 'ADD_FEATURE';
 // action creator
 export const addFeature = feature => {
